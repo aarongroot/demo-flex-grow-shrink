@@ -41,3 +41,19 @@ section:only-child {
     background-color: whitesmoke;
     color: darkslategray;
 }
+
+/* text are content width by default (the text and padding inside), but due to that they do have to take up all the space on the row. Flex grow allows items to grow beyond their content width to take up the extra space when there is space to do so. Default is flex-grow: 0; which is no grow whereas flex-grow: 1; means grow. */
+
+/* by deafult all flex items are flex-shrink:1; If items don't shrink they become the maximum content width!! */
+section{
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto; */
+    /* flex shorthand is grow, shrink, and basis */ 
+    /* flex: 1 1 33%; */
+    flex: 1;
+}
+/* section:nth-child(3){
+    flex-grow: 3;
+    /* this item gets 3 times the remaining space 
+} */
